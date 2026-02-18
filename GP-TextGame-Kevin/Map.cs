@@ -11,8 +11,7 @@ namespace FirstPlayable_GP2_Kevin
     internal class Map
     {
 
-        private string[] _map = File.ReadAllLines(@"C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\MapText.txt");
-        //you must run this before any other map methods
+        private string[] _map = File.ReadAllLines(@"MapText.txt");
 
         public void DrawMap()
         {
@@ -42,33 +41,33 @@ namespace FirstPlayable_GP2_Kevin
             }
 
         }
-        public bool CheakSpace(int x, int y)
+        public String CheakSpace(int x, int y)
         {
 
 
             if (y < 0)
             {
-                return false;
+                return "fail";
             }
             else if (y >= _map.Length)
             {
-                return false;
+                return "fail";
             }
             else if (x < 0)
             {
-                return false;
+                return "fail";
             }
             else if (x >= _map[y].Length)
             {
-                return false;
+                return "fail";
             }
-            else if (_map[y][x] != '`')
+            else if (_map[y][x] == '`')
             {
-                return false;
+                return "clear";
             }
             else
             {
-                return true;
+                return "fail";
             }
 
 

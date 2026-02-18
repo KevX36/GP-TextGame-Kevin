@@ -6,3 +6,4 @@ C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextG
 C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextGame-Kevin.exe
 C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextGame-Kevin.pdb
 C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextGame-Kevin.exe.config
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\MapText.txt

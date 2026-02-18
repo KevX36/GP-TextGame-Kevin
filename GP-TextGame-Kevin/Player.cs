@@ -8,6 +8,7 @@ namespace FirstPlayable_GP2_Kevin
 {
     internal class Player
     {
+        public int _lastEnemyHP = 5;
         public int _xPos { get; private set; }
         public int _yPos { get; private set; }
         public Health _health;
@@ -17,11 +18,11 @@ namespace FirstPlayable_GP2_Kevin
             _yPos = y;
             _health = new Health(HP);
         }
-
+        //handles movment input
         public void MoveInput(List<Enemy> enemies, Map map)
         {
             ConsoleKeyInfo moveInput = Console.ReadKey();
-
+            
             if (moveInput.Key == ConsoleKey.W)
             {
                 Move(enemies, map, _xPos, _yPos - 1);
@@ -41,6 +42,7 @@ namespace FirstPlayable_GP2_Kevin
 
 
         }
+        //actually moves player or attacks if enemy is in the way
         private void Move(List<Enemy> enemies, Map map, int newX, int newY)
         {
             bool didNotAttack = true;
@@ -48,14 +50,18 @@ namespace FirstPlayable_GP2_Kevin
             {
                 if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
                 {
+                    
                     enemies[i]._health.TakeDamage(1);
                     didNotAttack = false;
+                    _lastEnemyHP = enemies[i]._health._health;
                 }
             }
+            
 
             if (didNotAttack)
             {
-                if (map.CheakSpace(newX, newY))
+                string spaceMovedTo = map.CheakSpace(newX, newY);
+                if (spaceMovedTo == "clear")
                 {
                     _xPos = newX;
                     _yPos = newY;
@@ -71,6 +77,7 @@ namespace FirstPlayable_GP2_Kevin
             Console.SetCursorPosition(_xPos + 5, _yPos + 5);
             Console.Write("*");
             Console.BackgroundColor = ConsoleColor.Black;
+            Console.SetCursorPosition(0, 0);
         }
 
     }

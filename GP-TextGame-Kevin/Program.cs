@@ -8,12 +8,14 @@ namespace FirstPlayable_GP2_Kevin
 {
     internal class Program
     {
+        
         static Map map = new Map();
         static List<Enemy> enemies = new List<Enemy>();
         static List<int> enemiesToRemove = new List<int>();
         static int Score = 0;
         static void Main(string[] args)
         {
+            
             enemies.Add(new Enemy(5, 19, 19));
             enemies.Add(new Enemy(5, 0, 19));
             enemies.Add(new Enemy(5, 19, 0));
@@ -21,7 +23,7 @@ namespace FirstPlayable_GP2_Kevin
             while (player._health.CheakIfAlive())
             {
                 Console.SetCursorPosition(0, 0);
-                Console.WriteLine($"Health: {player._health._health}        Score: {Score}");
+                Console.WriteLine($"Health: {player._health._health}        Score: {Score}      Enemy Health: {player._lastEnemyHP}");
                 //removes dead enemies
                 for (int i = 0; i < enemies.Count; i++)
                 {
@@ -34,12 +36,13 @@ namespace FirstPlayable_GP2_Kevin
                 {
                     for (int i = 0; i < enemiesToRemove.Count; i++)
                     {
-                        Console.WriteLine(enemiesToRemove[i]);
+                        
                         enemies.Remove(enemies[enemiesToRemove[i]]);
                         Score++;
                     }
                     enemiesToRemove.Clear();
                 }
+
                 if (!enemies.Any())
                 {
                     enemies.Add(new Enemy(5, 19, 19));
@@ -60,7 +63,9 @@ namespace FirstPlayable_GP2_Kevin
 
                 for (int i = 0; i < enemies.Count; i++)
                 {
-                    enemies[i].MoveDirection(player, map);
+                    
+                    enemies[i].MoveDirection(player,enemies, map);
+
                 }
 
 
@@ -72,7 +77,6 @@ namespace FirstPlayable_GP2_Kevin
 
 
 
-                Console.Clear();
 
             }
 

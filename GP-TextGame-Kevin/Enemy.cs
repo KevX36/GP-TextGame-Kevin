@@ -17,8 +17,8 @@ namespace FirstPlayable_GP2_Kevin
             _yPos = y;
             _health = new Health(HP);
         }
-
-        public void MoveDirection(Player player, Map map)
+        //detemings how enemy will move
+        public virtual void MoveDirection(Player player, List<Enemy> enemies, Map map)
         {
             bool XFirst;
             Random XOrY = new Random();
@@ -35,61 +35,76 @@ namespace FirstPlayable_GP2_Kevin
             {
                 if (_xPos < player._xPos)
                 {
-                    Move(player, map, _xPos + 1, _yPos);
+                    Move(player, enemies, map, _xPos + 1, _yPos);
                 }
                 else if (_xPos > player._xPos)
                 {
-                    Move(player, map, _xPos - 1, _yPos);
+                    Move(player, enemies, map, _xPos - 1, _yPos);
                 }
                 else if (_yPos < player._yPos)
                 {
-                    Move(player, map, _xPos, _yPos + 1);
+                    Move(player, enemies, map, _xPos, _yPos + 1);
                 }
                 else if (_yPos > player._yPos)
                 {
-                    Move(player, map, _xPos, _yPos + -1);
+                    Move(player, enemies, map, _xPos, _yPos + -1);
                 }
             }
             else
             {
                 if (_yPos < player._yPos)
                 {
-                    Move(player, map, _xPos, _yPos + 1);
+                    Move(player, enemies, map, _xPos, _yPos + 1);
                 }
                 else if (_yPos > player._yPos)
                 {
-                    Move(player, map, _xPos, _yPos - 1);
+                    Move(player, enemies, map, _xPos, _yPos - 1);
                 }
                 else if (_xPos < player._xPos)
                 {
-                    Move(player, map, _xPos + 1, _yPos);
+                    Move(player, enemies, map, _xPos + 1, _yPos);
                 }
                 else if (_xPos > player._xPos)
                 {
-                    Move(player, map, _xPos - 1, _yPos);
+                    Move(player, enemies, map, _xPos - 1, _yPos);
                 }
 
             }
         }
-        private void Move(Player player, Map map, int newX, int newY)
+        //will move enemy or attack if player is in the way
+        private void Move(Player player, List<Enemy> enemies, Map map, int newX, int newY)
         {
+            //checks space enemy tries to move to
+            string spaceMovedTo = map.CheakSpace(newX, newY);
+            //stops enemies stacking
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
+                {
 
+                    return;
+                }
+            }
+            //attacks player
             if (player._xPos == newX && player._yPos == newY)
             {
                 player._health.TakeDamage(1);
             }
-            else if (map.CheakSpace(newX, newY))
+            //moves normally if on grass
+            else if (spaceMovedTo == "clear")
             {
                 _xPos = newX;
                 _yPos = newY;
             }
         }
-        public void DrawEnemy()
+        
+        public virtual void DrawEnemy()
         {
             Console.BackgroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(_xPos + 5, _yPos + 5);
             Console.Write("X");
             Console.BackgroundColor = ConsoleColor.Black;
+            Console.SetCursorPosition(0, 0);
         }
 
 
