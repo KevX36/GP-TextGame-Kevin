@@ -5,12 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
+using System.Diagnostics.Eventing.Reader;
 
 namespace FirstPlayable_GP2_Kevin
 {
     internal class Map
     {
-
+        private Dictionary<char, ConsoleColor> backgroundColors = new Dictionary<char, ConsoleColor>()
+        {
+            {'`',ConsoleColor.Green },
+            {'~', ConsoleColor.Blue },
+            {'^', ConsoleColor.Gray }
+        };
         private string[] _map = File.ReadAllLines(@"MapText.txt");
 
         public void DrawMap()
@@ -21,58 +27,52 @@ namespace FirstPlayable_GP2_Kevin
 
                 for (int j = 0; j < _map.Length; j++)
                 {
-
                     Console.SetCursorPosition(i + 5, j + 5);
-                    if (_map[j][i] == '`')
-                    {
-                        Console.BackgroundColor = ConsoleColor.Green;
-                    }
-                    else if (_map[j][i] == '~')
-                    {
-                        Console.BackgroundColor = ConsoleColor.Blue;
-                    }
-                    else if (_map[j][i] == '^')
-                    {
-                        Console.BackgroundColor = ConsoleColor.Gray;
-                    }
+                    Console.BackgroundColor = backgroundColors[_map[j][i]];
                     Console.Write(_map[j][i]);
                     Console.BackgroundColor = ConsoleColor.Black;
                 }
             }
 
         }
-        public String CheakSpace(int x, int y)
+        public String CheakSpace(int x, int y,int oldX, int oldY)
         {
-
+            string spaceResult;
 
             if (y < 0)
             {
-                return "fail";
+                spaceResult = "fail";
             }
             else if (y >= _map.Length)
             {
-                return "fail";
+                spaceResult = "fail";
             }
             else if (x < 0)
             {
-                return "fail";
+                spaceResult = "fail";
             }
             else if (x >= _map[y].Length)
             {
-                return "fail";
+                spaceResult = "fail";
             }
             else if (_map[y][x] == '`')
             {
-                return "clear";
+                spaceResult = "clear";
             }
             else
             {
-                return "fail";
+                spaceResult = "fail";
             }
 
+            if(spaceResult != "fail")
+            {
+                Console.SetCursorPosition(oldX+5, oldY+5);
+                Console.BackgroundColor = backgroundColors[_map[oldY][oldX]];
+                Console.Write(_map[oldY][oldX]);
+                Console.BackgroundColor = ConsoleColor.Black;
+            }
 
-
-
+                return spaceResult;
 
         }
 

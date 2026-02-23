@@ -15,7 +15,7 @@ namespace FirstPlayable_GP2_Kevin
         static int Score = 0;
         static void Main(string[] args)
         {
-            
+            map.DrawMap();
             enemies.Add(new Enemy(5, 19, 19));
             enemies.Add(new Enemy(5, 0, 19));
             enemies.Add(new Enemy(5, 19, 0));
@@ -51,7 +51,7 @@ namespace FirstPlayable_GP2_Kevin
                     enemies.Add(new Enemy(5, 0, 0));
                 }
 
-                map.DrawMap();
+                
                 player.DrawPlayer();
                 for (int i = 0; i < enemies.Count; i++)
                 {

@@ -12,11 +12,14 @@ namespace FirstPlayable_GP2_Kevin
         public int _xPos { get; private set; }
         public int _yPos { get; private set; }
         public Health _health;
+        public int moveStall = 0;
+        public int strength { get; private set; }
         public Player(int HP, int x, int y)
         {
             _xPos = x;
             _yPos = y;
             _health = new Health(HP);
+            strength = 1;
         }
         //handles movment input
         public void MoveInput(List<Enemy> enemies, Map map)
@@ -45,28 +48,35 @@ namespace FirstPlayable_GP2_Kevin
         //actually moves player or attacks if enemy is in the way
         private void Move(List<Enemy> enemies, Map map, int newX, int newY)
         {
-            bool didNotAttack = true;
-            for (int i = 0; i < enemies.Count; i++)
+            if(moveStall <= 0)
             {
-                if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
+                bool didNotAttack = true;
+                for (int i = 0; i < enemies.Count; i++)
                 {
-                    
-                    enemies[i]._health.TakeDamage(1);
-                    didNotAttack = false;
-                    _lastEnemyHP = enemies[i]._health._health;
+                    if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
+                    {
+
+                        enemies[i]._health.TakeDamage(strength);
+                        didNotAttack = false;
+                        _lastEnemyHP = enemies[i]._health._health;
+                    }
+                }
+
+
+                if (didNotAttack)
+                {
+                    string spaceMovedTo = map.CheakSpace(newX, newY, _xPos,_yPos);
+                    if (spaceMovedTo == "clear")
+                    {
+                        _xPos = newX;
+                        _yPos = newY;
+                    }
+
                 }
             }
-            
-
-            if (didNotAttack)
+            else
             {
-                string spaceMovedTo = map.CheakSpace(newX, newY);
-                if (spaceMovedTo == "clear")
-                {
-                    _xPos = newX;
-                    _yPos = newY;
-                }
-
+                moveStall -= 1;
             }
 
         }
