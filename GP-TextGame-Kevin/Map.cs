@@ -35,7 +35,7 @@ namespace FirstPlayable_GP2_Kevin
             }
 
         }
-        public String CheakSpace(int x, int y,int oldX, int oldY)
+        public String CheckSpace(int x, int y,int oldX, int oldY)
         {
             string spaceResult;
 

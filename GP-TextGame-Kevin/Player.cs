@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GP_TextGame_Kevin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,9 @@ namespace FirstPlayable_GP2_Kevin
 {
     internal class Player
     {
+        
         public int _lastEnemyHP = 5;
+        public int _lastEnemyStrength = 1;
         public int _xPos { get; private set; }
         public int _yPos { get; private set; }
         public Health _health;
@@ -59,13 +62,14 @@ namespace FirstPlayable_GP2_Kevin
                         enemies[i]._health.TakeDamage(strength);
                         didNotAttack = false;
                         _lastEnemyHP = enemies[i]._health._health;
+                        _lastEnemyStrength = enemies[i].strength;
                     }
                 }
 
 
                 if (didNotAttack)
                 {
-                    string spaceMovedTo = map.CheakSpace(newX, newY, _xPos,_yPos);
+                    string spaceMovedTo = map.CheckSpace(newX, newY, _xPos,_yPos);
                     if (spaceMovedTo == "clear")
                     {
                         _xPos = newX;

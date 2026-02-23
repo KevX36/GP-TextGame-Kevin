@@ -9,11 +9,12 @@ namespace FirstPlayable_GP2_Kevin
 {
     internal class Enemy
     {
-        public int _xPos { get; private set; }
-        public int _yPos { get; private set; }
+        public int _xPos;
+        public int _yPos;
         public Health _health;
         public int moveStall = 0;
-        public int strength { get; private set; }
+        public int strength;
+        public char Icon = 'X';
         public Enemy(int HP, int x, int y)
         {
             _xPos = x;
@@ -86,7 +87,7 @@ namespace FirstPlayable_GP2_Kevin
             if(moveStall <= 0)
             {
                 //checks space enemy tries to move to
-                string spaceMovedTo = map.CheakSpace(newX, newY,_xPos,_yPos);
+                string spaceMovedTo = map.CheckSpace(newX, newY,_xPos,_yPos);
                 //stops enemies stacking
                 for (int i = 0; i < enemies.Count; i++)
                 {
@@ -114,11 +115,11 @@ namespace FirstPlayable_GP2_Kevin
             }
         }
         
-        public virtual void DrawEnemy()
+        public  void DrawEnemy()
         {
             Console.BackgroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(_xPos + 5, _yPos + 5);
-            Console.Write("X");
+            Console.Write(Icon);
             Console.BackgroundColor = ConsoleColor.Black;
             Console.SetCursorPosition(0, 0);
         }
