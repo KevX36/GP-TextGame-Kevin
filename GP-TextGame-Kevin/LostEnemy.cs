@@ -13,7 +13,7 @@ namespace GP_TextGame_Kevin
         public LostEnemy(int HP, int x, int y) : base(HP, x, y)
         {
             //changes how enemy is drawn
-            Icon = '?';
+            _icon = '?';
         }
         public override void MoveDirection(Player player, List<Enemy> enemies, Map map)
         {

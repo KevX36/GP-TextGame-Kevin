@@ -14,7 +14,7 @@ namespace GP_TextGame_Kevin
         public StrongEnemy(int HP, int x, int y) : base(HP, x, y)
         {
             //changes how enemy is drawn
-            Icon = '!';
+            _icon = '!';
         }
         protected override void Setstrength()
         {

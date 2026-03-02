@@ -13,7 +13,8 @@ namespace GP_TextGame_Kevin
         {
 
         }
-        public static GameManager _instance
+        private static GameManager _instance;
+        public static GameManager Instance
         {
             get
             {
@@ -23,13 +24,10 @@ namespace GP_TextGame_Kevin
                 }
                 return _instance;
             }
-            private set
-            {
-                
-            }
+            
             
         }
-        
+        public static List<Item> items = new List<Item>();
         public static Map map = new Map();
         public static List<Enemy> enemies = new List<Enemy>();
         public static  Player player = new Player(100, 0, 0);

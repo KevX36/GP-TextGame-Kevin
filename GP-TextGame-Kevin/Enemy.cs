@@ -14,7 +14,7 @@ namespace FirstPlayable_GP2_Kevin
         public Health _health;
         public int moveStall = 0;
         public int strength;
-        public char Icon = 'X';
+        public char _icon = 'X';
         public Enemy(int HP, int x, int y)
         {
             _xPos = x;
@@ -125,7 +125,7 @@ namespace FirstPlayable_GP2_Kevin
         {
             Console.BackgroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(_xPos + 5, _yPos + 5);
-            Console.Write(Icon);
+            Console.Write(_icon);
             Console.BackgroundColor = ConsoleColor.Black;
             Console.SetCursorPosition(0, 0);
         }
