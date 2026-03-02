@@ -9,9 +9,30 @@ namespace GP_TextGame_Kevin
 {
     internal class GameManager
     {
-        static public Map map = new Map();
-        static public List<Enemy> enemies = new List<Enemy>();
-        static public Player player = new Player(100, 0, 0);
+        private GameManager()
+        {
+
+        }
+        public static GameManager _instance
+        {
+            get
+            {
+                if(_instance == null)
+                {
+                    _instance = new GameManager();
+                }
+                return _instance;
+            }
+            private set
+            {
+                
+            }
+            
+        }
+        
+        public static Map map = new Map();
+        public static List<Enemy> enemies = new List<Enemy>();
+        public static  Player player = new Player(100, 0, 0);
         
     }
 }

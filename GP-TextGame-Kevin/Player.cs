@@ -27,60 +27,69 @@ namespace FirstPlayable_GP2_Kevin
         //handles movment input
         public void MoveInput(List<Enemy> enemies, Map map)
         {
-            ConsoleKeyInfo moveInput = Console.ReadKey();
             
-            if (moveInput.Key == ConsoleKey.W)
+            
+            
+            if (moveStall <= 0)
             {
-                Move(enemies, map, _xPos, _yPos - 1);
-            }
-            else if (moveInput.Key == ConsoleKey.S)
-            {
-                Move(enemies, map, _xPos, _yPos + 1);
-            }
-            else if (moveInput.Key == ConsoleKey.A)
-            {
-                Move(enemies, map, _xPos - 1, _yPos);
-            }
-            else if (moveInput.Key == ConsoleKey.D)
-            {
-                Move(enemies, map, _xPos + 1, _yPos);
-            }
+                ConsoleKeyInfo moveInput = Console.ReadKey();
 
-
-        }
-        //actually moves player or attacks if enemy is in the way
-        private void Move(List<Enemy> enemies, Map map, int newX, int newY)
-        {
-            if(moveStall <= 0)
-            {
-                bool didNotAttack = true;
-                for (int i = 0; i < enemies.Count; i++)
+                if (moveInput.Key == ConsoleKey.W)
                 {
-                    if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
-                    {
-
-                        enemies[i]._health.TakeDamage(strength);
-                        didNotAttack = false;
-                        _lastEnemyHP = enemies[i]._health._health;
-                        _lastEnemyStrength = enemies[i].strength;
-                    }
+                    Move(enemies, map, _xPos, _yPos - 1);
                 }
-
-
-                if (didNotAttack)
+                else if (moveInput.Key == ConsoleKey.S)
                 {
-                    string spaceMovedTo = map.CheckSpace(newX, newY, _xPos,_yPos);
-                    if (spaceMovedTo == "clear")
-                    {
-                        _xPos = newX;
-                        _yPos = newY;
-                    }
-
+                    Move(enemies, map, _xPos, _yPos + 1);
+                }
+                else if (moveInput.Key == ConsoleKey.A)
+                {
+                    Move(enemies, map, _xPos - 1, _yPos);
+                }
+                else if (moveInput.Key == ConsoleKey.D)
+                {
+                    Move(enemies, map, _xPos + 1, _yPos);
                 }
             }
             else
             {
                 moveStall -= 1;
+            }
+
+        }
+        //actually moves player or attacks if enemy is in the way
+        private void Move(List<Enemy> enemies, Map map, int newX, int newY)
+        {
+            
+            bool didNotAttack = true;
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
+                {
+
+                    enemies[i]._health.TakeDamage(strength);
+                    didNotAttack = false;
+                    _lastEnemyHP = enemies[i]._health._health;
+                    _lastEnemyStrength = enemies[i].strength;
+                }
+            }
+
+
+            if (didNotAttack)
+            {
+                string spaceMovedTo = map.CheckSpace(newX, newY, _xPos, _yPos);
+                if (spaceMovedTo == "clear")
+                {
+                    _xPos = newX;
+                    _yPos = newY;
+                }
+                else if (spaceMovedTo == "water")
+                {
+                    _xPos = newX;
+                    _yPos = newY;
+                    moveStall++;
+                }
+
             }
 
         }

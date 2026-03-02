@@ -108,6 +108,12 @@ namespace FirstPlayable_GP2_Kevin
                     _xPos = newX;
                     _yPos = newY;
                 }
+                else if (spaceMovedTo == "water")
+                {
+                    _xPos = newX;
+                    _yPos = newY;
+                    moveStall++;
+                }
             }
             else
             {

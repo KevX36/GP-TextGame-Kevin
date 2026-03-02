@@ -47,7 +47,13 @@ namespace GP_TextGame_Kevin
                     _xPos = newX;
                     _yPos = newY;
                 }
-                moveStall = 2;
+                else if (spaceMovedTo == "water")
+                {
+                    _xPos = newX;
+                    _yPos = newY;
+                    moveStall+= 2;
+                }
+                moveStall += 2;
             }
             else
             {

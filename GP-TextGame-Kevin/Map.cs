@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Diagnostics.Eventing.Reader;
+using System.Runtime.InteropServices;
 
 namespace FirstPlayable_GP2_Kevin
 {
@@ -59,6 +60,10 @@ namespace FirstPlayable_GP2_Kevin
             {
                 spaceResult = "clear";
             }
+            else if (_map[y][x] == '~')
+            {
+                spaceResult = "water";
+            }
             else
             {
                 spaceResult = "fail";
@@ -76,7 +81,13 @@ namespace FirstPlayable_GP2_Kevin
 
         }
 
-
+        public void redrawSpace(int x, int y)
+        {
+            Console.SetCursorPosition(x + 5, y + 5);
+            Console.BackgroundColor = backgroundColors[_map[y][x]];
+            Console.Write(_map[y][x]);
+            Console.BackgroundColor = ConsoleColor.Black;
+        }
 
 
 

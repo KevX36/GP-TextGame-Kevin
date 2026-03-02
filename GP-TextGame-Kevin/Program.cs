@@ -10,7 +10,7 @@ namespace FirstPlayable_GP2_Kevin
 {
     internal class Program
     {
-        static GameManager gameManager = new GameManager();
+        
         static List<int> enemiesToRemove = new List<int>();
         static int Score = 0;
         static Random random = new Random();
@@ -36,7 +36,7 @@ namespace FirstPlayable_GP2_Kevin
                 {
                     for (int i = 0; i < enemiesToRemove.Count; i++)
                     {
-
+                        GameManager.map.redrawSpace(GameManager.enemies[i]._xPos, GameManager.enemies[i]._yPos);
                         GameManager.enemies.Remove(GameManager.enemies[enemiesToRemove[i]]);
                         Score++;
                     }
