@@ -145,7 +145,7 @@ namespace FirstPlayable_GP2_Kevin
                 else
                 {
                     //replace with 3rd enemy type later
-                    GameManager.enemies.Add(new Enemy(5, x, y));
+                    GameManager.enemies.Add(new StrongEnemy(10, x, y));
                 }
             }
         }
