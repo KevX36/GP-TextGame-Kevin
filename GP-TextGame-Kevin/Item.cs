@@ -10,8 +10,9 @@ namespace GP_TextGame_Kevin
     {
         public int _xPos;
         public int _yPos;
-        private string _icon = "T";
-        private ConsoleColor color = ConsoleColor.Black;
+        protected string _icon = "T";
+        protected ConsoleColor color = ConsoleColor.Black;
+        public bool hasBeenUsed = false;
         public Item(int x, int y)
         {
             _xPos = x;
@@ -19,7 +20,7 @@ namespace GP_TextGame_Kevin
         }
         public virtual void use()
         {
-            Console.WriteLine("you should not be reading this");
+            hasBeenUsed = true;
         }
         public void draw()
         {

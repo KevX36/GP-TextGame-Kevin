@@ -25,19 +25,19 @@ namespace GP_TextGame_Kevin
             
             if (directionMoved == 1)
             {
-                Move(player, enemies, map, _xPos, _yPos + 1);
+                Move( _xPos, _yPos + 1);
             }
             else if (directionMoved == 2)
             {
-                Move(player, enemies, map, _xPos, _yPos - 1);
+                Move( _xPos, _yPos - 1);
             }
             else if (directionMoved ==3)
             {
-                Move(player, enemies, map, _xPos + 1, _yPos);
+                Move( _xPos + 1, _yPos);
             }
             else
             {
-                Move(player, enemies, map, _xPos - 1, _yPos);
+                Move(_xPos - 1, _yPos);
             }
 
         }

@@ -12,7 +12,7 @@ namespace FirstPlayable_GP2_Kevin
     {
         
         static List<int> enemiesToRemove = new List<int>();
-        static int Score = 0;
+        
         static Random random = new Random();
         static void Main(string[] args)
         {
@@ -23,7 +23,7 @@ namespace FirstPlayable_GP2_Kevin
             while (GameManager.player._health.CheakIfAlive())
             {
                 Console.SetCursorPosition(0, 0);
-                Console.WriteLine($"Health: {GameManager.player._health._health}    strength:{GameManager.player.strength}     Score: {Score}      Enemy Health: {GameManager.player._lastEnemyHP}      Enemy Strength: {GameManager.player._lastEnemyStrength}                 ");
+                Console.WriteLine($"Health: {GameManager.player._health._health}    strength:{GameManager.player.strength}     Score: {GameManager.Score}      Enemy Health: {GameManager.player._lastEnemyHP}      Enemy Strength: {GameManager.player._lastEnemyStrength}                 ");
                 //removes dead enemies
                 for (int i = 0; i < GameManager.enemies.Count; i++)
                 {
@@ -38,7 +38,7 @@ namespace FirstPlayable_GP2_Kevin
                     {
                         GameManager.map.redrawSpace(GameManager.enemies[i]._xPos, GameManager.enemies[i]._yPos);
                         GameManager.enemies.Remove(GameManager.enemies[enemiesToRemove[i]]);
-                        Score++;
+                        GameManager.Score++;
                     }
                     enemiesToRemove.Clear();
                 }
@@ -56,7 +56,7 @@ namespace FirstPlayable_GP2_Kevin
                 }
 
 
-                GameManager.player.MoveInput(GameManager.enemies, GameManager.map);
+                GameManager.player.MoveInput();
 
                 for (int i = 0; i < GameManager.enemies.Count; i++)
                 {
@@ -66,7 +66,7 @@ namespace FirstPlayable_GP2_Kevin
                 }
 
 
-
+                
 
 
 

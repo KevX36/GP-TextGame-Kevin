@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GP_TextGame_Kevin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -44,63 +45,63 @@ namespace FirstPlayable_GP2_Kevin
             {
                 if (_xPos < player._xPos)
                 {
-                    Move(player, enemies, map, _xPos + 1, _yPos);
+                    Move(_xPos + 1, _yPos);
                 }
                 else if (_xPos > player._xPos)
                 {
-                    Move(player, enemies, map, _xPos - 1, _yPos);
+                    Move( _xPos - 1, _yPos);
                 }
                 else if (_yPos < player._yPos)
                 {
-                    Move(player, enemies, map, _xPos, _yPos + 1);
+                    Move( _xPos, _yPos + 1);
                 }
                 else if (_yPos > player._yPos)
                 {
-                    Move(player, enemies, map, _xPos, _yPos + -1);
+                    Move( _xPos, _yPos + -1);
                 }
             }
             else
             {
                 if (_yPos < player._yPos)
                 {
-                    Move(player, enemies, map, _xPos, _yPos + 1);
+                    Move(_xPos, _yPos + 1);
                 }
                 else if (_yPos > player._yPos)
                 {
-                    Move(player, enemies, map, _xPos, _yPos - 1);
+                    Move( _xPos, _yPos - 1);
                 }
                 else if (_xPos < player._xPos)
                 {
-                    Move(player, enemies, map, _xPos + 1, _yPos);
+                    Move( _xPos + 1, _yPos);
                 }
                 else if (_xPos > player._xPos)
                 {
-                    Move(player, enemies, map, _xPos - 1, _yPos);
+                    Move( _xPos - 1, _yPos);
                 }
 
             }
         }
         //will move enemy or attack if player is in the way
-        protected virtual void Move(Player player, List<Enemy> enemies, Map map, int newX, int newY)
+        protected virtual void Move(int newX, int newY)
         {
-
+            
             if(moveStall <= 0)
             {
                 //checks space enemy tries to move to
-                string spaceMovedTo = map.CheckSpace(newX, newY,_xPos,_yPos);
+                string spaceMovedTo = GameManager.map.CheckSpace(newX, newY,_xPos,_yPos);
                 //stops enemies stacking
-                for (int i = 0; i < enemies.Count; i++)
+                for (int i = 0; i < GameManager.enemies.Count; i++)
                 {
-                    if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
+                    if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
                     {
 
                         return;
                     }
                 }
                 //attacks player
-                if (player._xPos == newX && player._yPos == newY)
+                if (GameManager.player._xPos == newX && GameManager.player._yPos == newY)
                 {
-                    player._health.TakeDamage(strength);
+                    GameManager.player._health.TakeDamage(strength);
                 }
                 //moves normally if on grass
                 else if (spaceMovedTo == "clear")
@@ -114,6 +115,7 @@ namespace FirstPlayable_GP2_Kevin
                     _yPos = newY;
                     moveStall++;
                 }
+                
             }
             else
             {

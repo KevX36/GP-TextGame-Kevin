@@ -27,6 +27,7 @@ namespace GP_TextGame_Kevin
             
             
         }
+        public static int Score = 0;
         public static List<Item> items = new List<Item>();
         public static Map map = new Map();
         public static List<Enemy> enemies = new List<Enemy>();

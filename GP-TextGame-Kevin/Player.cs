@@ -25,7 +25,7 @@ namespace FirstPlayable_GP2_Kevin
             strength = 1;
         }
         //handles movment input
-        public void MoveInput(List<Enemy> enemies, Map map)
+        public void MoveInput()
         {
             
             
@@ -36,19 +36,19 @@ namespace FirstPlayable_GP2_Kevin
 
                 if (moveInput.Key == ConsoleKey.W)
                 {
-                    Move(enemies, map, _xPos, _yPos - 1);
+                    Move(_xPos, _yPos - 1);
                 }
                 else if (moveInput.Key == ConsoleKey.S)
                 {
-                    Move(enemies, map, _xPos, _yPos + 1);
+                    Move( _xPos, _yPos + 1);
                 }
                 else if (moveInput.Key == ConsoleKey.A)
                 {
-                    Move(enemies, map, _xPos - 1, _yPos);
+                    Move(_xPos - 1, _yPos);
                 }
                 else if (moveInput.Key == ConsoleKey.D)
                 {
-                    Move(enemies, map, _xPos + 1, _yPos);
+                    Move(_xPos + 1, _yPos);
                 }
             }
             else
@@ -58,26 +58,35 @@ namespace FirstPlayable_GP2_Kevin
 
         }
         //actually moves player or attacks if enemy is in the way
-        private void Move(List<Enemy> enemies, Map map, int newX, int newY)
+        private void Move(int newX, int newY)
         {
             
-            bool didNotAttack = true;
-            for (int i = 0; i < enemies.Count; i++)
+            bool didNotAct = true;
+            for (int i = 0; i < GameManager.enemies.Count; i++)
             {
-                if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
+                if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
                 {
 
-                    enemies[i]._health.TakeDamage(strength);
-                    didNotAttack = false;
-                    _lastEnemyHP = enemies[i]._health._health;
-                    _lastEnemyStrength = enemies[i].strength;
+                    GameManager.enemies[i]._health.TakeDamage(strength);
+                    didNotAct = false;
+                    _lastEnemyHP = GameManager.enemies[i]._health._health;
+                    _lastEnemyStrength = GameManager.enemies[i].strength;
+                }
+            }
+            for(int i = 0; i < GameManager.items.Count; i++)
+            {
+                if (GameManager.items[i]._xPos == newX && GameManager.items[i]._yPos == newY)
+                {
+
+                    GameManager.items[i].use();
+                    didNotAct = false;
+                    
                 }
             }
 
-
-            if (didNotAttack)
+            if (didNotAct)
             {
-                string spaceMovedTo = map.CheckSpace(newX, newY, _xPos, _yPos);
+                string spaceMovedTo = GameManager.map.CheckSpace(newX, newY, _xPos, _yPos);
                 if (spaceMovedTo == "clear")
                 {
                     _xPos = newX;

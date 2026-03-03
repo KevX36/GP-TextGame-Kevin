@@ -20,26 +20,26 @@ namespace GP_TextGame_Kevin
         {
             strength = 5;
         }
-        protected override void Move(Player player, List<Enemy> enemies, Map map, int newX, int newY)
+        protected override void Move(int newX, int newY)
         {
-
+            //almost the same as base enemy but stalls after moving
             if (moveStall <= 0)
             {
                 //checks space enemy tries to move to
-                string spaceMovedTo = map.CheckSpace(newX, newY, _xPos, _yPos);
+                string spaceMovedTo = GameManager.map.CheckSpace(newX, newY, _xPos, _yPos);
                 //stops enemies stacking
-                for (int i = 0; i < enemies.Count; i++)
+                for (int i = 0; i < GameManager.enemies.Count; i++)
                 {
-                    if (enemies[i]._xPos == newX && enemies[i]._yPos == newY)
+                    if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
                     {
 
                         return;
                     }
                 }
                 //attacks player
-                if (player._xPos == newX && player._yPos == newY)
+                if (GameManager.player._xPos == newX && GameManager.player._yPos == newY)
                 {
-                    player._health.TakeDamage(strength);
+                    GameManager.player._health.TakeDamage(strength);
                 }
                 //moves normally if on grass
                 else if (spaceMovedTo == "clear")
@@ -62,7 +62,7 @@ namespace GP_TextGame_Kevin
         }
 
 
-
+        
 
 
 
