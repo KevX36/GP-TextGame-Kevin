@@ -22,7 +22,7 @@ namespace GP_TextGame_Kevin
         {
             hasBeenUsed = true;
         }
-        public void draw()
+        public void Draw()
         {
             Console.BackgroundColor = color;
             Console.SetCursorPosition(_xPos + 5, _yPos + 5);

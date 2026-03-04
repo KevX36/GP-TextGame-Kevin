@@ -21,7 +21,7 @@ namespace FirstPlayable_GP2_Kevin
         {
             _xPos = x;
             _yPos = y;
-            _health = new Health(HP);
+            _health = new Health(HP,0);
             strength = 1;
         }
         //handles movment input

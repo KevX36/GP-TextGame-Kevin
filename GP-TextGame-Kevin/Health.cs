@@ -11,11 +11,21 @@ namespace FirstPlayable_GP2_Kevin
         public int _health { get; private set; }
         protected int _maxHealth;
         protected bool _isAlive = true;
-
-        public Health(int HP)
+        public int _revives;
+        public Health(int HP, int revives)
         {
             _maxHealth = HP;
             _health = HP;
+            _revives = revives;
+        }
+        public void revive()
+        {
+            if(_revives > 0)
+            {
+                _revives--;
+                _isAlive = true;
+                _health = _maxHealth;
+            }
         }
         public void TakeDamage(int DMG)
         {
@@ -24,6 +34,7 @@ namespace FirstPlayable_GP2_Kevin
             {
                 _isAlive = false;
                 _health = 0;
+                revive();
             }
         }
         public bool CheakIfAlive()
