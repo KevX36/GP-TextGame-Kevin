@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|c:\\kevin\u0027s unity projects\\gp-textgame-kevin\\gp-textgame-kevin\\terainimunneenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\terainimunneenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\maptext.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\maptext.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\strongenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\strongenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\lostenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\lostenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\heal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\heal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\scoreboost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\scoreboost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\extralife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\extralife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\gp-textgame-kevin\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BD83826-3B75-4F85-985E-5FA8D2547ACC}|GP-TextGame-Kevin\\GP-TextGame-Kevin.csproj|solutionrelative:gp-textgame-kevin\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Program.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\Program.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Program.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAQwEEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T12:34:07.95Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Player.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\Player.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Player.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\Player.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAiwGQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T12:39:49.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TerainImunneEnemy.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\TerainImunneEnemy.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\TerainImunneEnemy.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\TerainImunneEnemy.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\TerainImunneEnemy.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T12:40:55.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExtraLife.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\ExtraLife.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\ExtraLife.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\ExtraLife.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\ExtraLife.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T10:54:12.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Item.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\Item.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Item.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\Item.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:55:07.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LostEnemy.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\LostEnemy.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\LostEnemy.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\LostEnemy.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\LostEnemy.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T13:28:32.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Health.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Health.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\Health.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Health.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\Health.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T12:38:31.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StrongEnemy.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\StrongEnemy.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\StrongEnemy.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\StrongEnemy.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\StrongEnemy.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwEIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T12:31:28.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Enemy.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\Enemy.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Enemy.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\Enemy.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAcwIMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T12:40:16.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScoreBoost.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\ScoreBoost.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\ScoreBoost.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\ScoreBoost.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\ScoreBoost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T14:05:07.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Heal.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Heal.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\Heal.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Heal.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\Heal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T14:05:46.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\GameManager.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\GameManager.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\GameManager.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\GameManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T13:24:07.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MapText.txt",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\MapText.txt",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\MapText.txt",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\MapText.txt",
+              "RelativeToolTip": "GP-TextGame-Kevin\\MapText.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-18T12:36:15.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Map.cs",
+              "DocumentMoniker": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Map.cs",
+              "RelativeDocumentMoniker": "GP-TextGame-Kevin\\Map.cs",
+              "ToolTip": "C:\\Kevin\u0027s unity projects\\GP-TextGame-Kevin\\GP-TextGame-Kevin\\Map.cs",
+              "RelativeToolTip": "GP-TextGame-Kevin\\Map.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwE4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T12:37:18.57Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
