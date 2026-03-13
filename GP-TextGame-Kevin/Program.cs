@@ -39,8 +39,8 @@ namespace FirstPlayable_GP2_Kevin
                 {
                     for (int i = 0; i < enemiesToRemove.Count; i++)
                     {
-                        
-                        
+
+                        GameManager.player._lastEnemy = 0;
                         GameManager.enemies.Remove(GameManager.enemies[enemiesToRemove[i]]);
                         GameManager.Score++;
                     }

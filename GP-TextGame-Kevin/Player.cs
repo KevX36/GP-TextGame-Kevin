@@ -12,6 +12,7 @@ namespace FirstPlayable_GP2_Kevin
         
         public int _lastEnemyHP = 5;
         public int _lastEnemyStrength = 1;
+        public int _lastEnemy = 0;
         public int _xPos { get; private set; }
         public int _yPos { get; private set; }
         public Health _health;
@@ -69,11 +70,12 @@ namespace FirstPlayable_GP2_Kevin
 
                     GameManager.enemies[i]._health.TakeDamage(strength);
                     didNotAct = false;
-                    _lastEnemyHP = GameManager.enemies[i]._health._health;
-                    _lastEnemyStrength = GameManager.enemies[i].strength;
+                    _lastEnemy = i;
                 }
             }
-            for(int i = 0; i < GameManager.items.Count; i++)
+            _lastEnemyHP = GameManager.enemies[_lastEnemy]._health._health;
+            _lastEnemyStrength = GameManager.enemies[_lastEnemy].strength;
+            for (int i = 0; i < GameManager.items.Count; i++)
             {
                 if (GameManager.items[i]._xPos == newX && GameManager.items[i]._yPos == newY)
                 {
