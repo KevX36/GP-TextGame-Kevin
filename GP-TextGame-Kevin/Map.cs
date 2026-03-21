@@ -17,8 +17,9 @@ namespace FirstPlayable_GP2_Kevin
             {'`',ConsoleColor.Green },
             {'~', ConsoleColor.DarkBlue },
             {'^', ConsoleColor.DarkGray },
-            {'#',ConsoleColor.DarkGreen },
-            {'@',ConsoleColor.DarkMagenta }
+            {'H',ConsoleColor.DarkGreen },
+            {'@',ConsoleColor.DarkMagenta },
+            {'#' , ConsoleColor.White},
         };
         public string[] _map { get; } = File.ReadAllLines(@"MapText.txt");
 
@@ -66,7 +67,7 @@ namespace FirstPlayable_GP2_Kevin
             {
                 spaceResult = "water";
             }
-            else if (_map[y][x] == '#')
+            else if (_map[y][x] == 'H')
             {
                 spaceResult = "forest";
             }
