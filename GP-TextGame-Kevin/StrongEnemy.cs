@@ -39,6 +39,7 @@ namespace GP_TextGame_Kevin
                 //attacks player
                 if (GameManager.player._xPos == newX && GameManager.player._yPos == newY)
                 {
+                    
                     GameManager.player._health.TakeDamage(strength);
                 }
                 //moves normally if on grass

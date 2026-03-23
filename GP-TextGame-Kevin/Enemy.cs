@@ -115,7 +115,12 @@ namespace FirstPlayable_GP2_Kevin
                 //attacks player
                 if (GameManager.player._xPos == newX && GameManager.player._yPos == newY)
                 {
-                    GameManager.player._health.TakeDamage(strength);
+                    //enemies have a chance to miss
+                    Random ran = new Random();
+                    if (ran.Next(0,10) > 0)
+                    {
+                        GameManager.player._health.TakeDamage(strength);
+                    }
                 }
                 //moves normally if on grass
                 else if (spaceMovedTo == "clear")

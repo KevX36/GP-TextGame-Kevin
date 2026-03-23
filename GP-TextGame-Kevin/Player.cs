@@ -63,28 +63,53 @@ namespace FirstPlayable_GP2_Kevin
         {
             
             bool didNotAct = true;
-            for (int i = 0; i < GameManager.enemies.Count; i++)
+            if (GameManager.enemies.Any())
             {
-                if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
+                for (int i = 0; i < GameManager.enemies.Count; i++)
                 {
+                    if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
+                    {
 
-                    GameManager.enemies[i]._health.TakeDamage(strength);
-                    didNotAct = false;
-                    _lastEnemy = i;
+                        GameManager.enemies[i]._health.TakeDamage(strength);
+                        didNotAct = false;
+                        _lastEnemy = i+1;
+                    }
                 }
+                
             }
-            _lastEnemyHP = GameManager.enemies[_lastEnemy]._health._health;
-            _lastEnemyStrength = GameManager.enemies[_lastEnemy].strength;
-            for (int i = 0; i < GameManager.items.Count; i++)
+            
+            if (GameManager.boss._xPos == newX && GameManager.boss._yPos == newY)
             {
-                if (GameManager.items[i]._xPos == newX && GameManager.items[i]._yPos == newY)
+
+                GameManager.boss._health.TakeDamage(strength);
+                didNotAct = false;
+                _lastEnemy = 0;
+            }
+            //sets enemy stats in hud
+            if (_lastEnemy == 0)
+            {
+                _lastEnemyHP = GameManager.boss._health._health;
+                _lastEnemyStrength = GameManager.boss.strength;
+            }
+            else
+            {
+                _lastEnemyHP = GameManager.enemies[_lastEnemy-1]._health._health;
+                _lastEnemyStrength = GameManager.enemies[_lastEnemy-1].strength;
+            }
+            if (GameManager.items.Any())
+            {
+                for (int i = 0; i < GameManager.items.Count; i++)
                 {
-                    
-                    GameManager.items[i].use();
-                    didNotAct = false;
-                    
+                    if (GameManager.items[i]._xPos == newX && GameManager.items[i]._yPos == newY)
+                    {
+
+                        GameManager.items[i].use();
+                        didNotAct = false;
+
+                    }
                 }
             }
+            
 
             if (didNotAct)
             {
