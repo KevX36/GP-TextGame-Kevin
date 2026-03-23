@@ -208,12 +208,12 @@ namespace FirstPlayable_GP2_Kevin
 
             }
 
-
+            Console.Clear();
             if(GameManager.player._health.CheakIfAlive() == false)
             {
                 Console.WriteLine("You Died, Game Over");
             }
-            else if(GameManager.Score > 1010)
+            else if(GameManager.Score < 1010)
             {
                 Console.WriteLine("You Won");
             }

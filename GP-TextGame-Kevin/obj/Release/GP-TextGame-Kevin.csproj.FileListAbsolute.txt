@@ -1,0 +1,9 @@
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Release\MapText.txt
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Release\GP-TextGame-Kevin.exe.config
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Release\GP-TextGame-Kevin.exe
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Release\GP-TextGame-Kevin.pdb
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Release\GP-TextGame-Kevin.csproj.AssemblyReference.cache
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Release\GP-TextGame-Kevin.csproj.CoreCompileInputs.cache
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Release\GP-TextGame-Kevin.exe
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Release\GP-TextGame-Kevin.pdb
+C:\Kevin's unity projects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Release\GP-TextGame-Kevin.exe.config
