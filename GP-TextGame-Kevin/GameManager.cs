@@ -27,8 +27,7 @@ namespace GP_TextGame_Kevin
             
             
         }
-        public static int maxItems = 25;
-        public static int maxEnemies = 25;
+        public static Enemy boss = new Boss(30,99,22);
         public static int forestHeal = 3;
         public static int swampDamage = 3;
         public static int Score = 0;

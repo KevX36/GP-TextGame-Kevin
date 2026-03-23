@@ -151,6 +151,7 @@ namespace FirstPlayable_GP2_Kevin
         
         public  void DrawEnemy()
         {
+            
             Console.BackgroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(_xPos + 5, _yPos + 5);
             Console.Write(_icon);
