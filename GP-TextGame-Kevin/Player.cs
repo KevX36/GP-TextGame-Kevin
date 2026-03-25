@@ -78,18 +78,18 @@ namespace FirstPlayable_GP2_Kevin
                 
             }
             
-            if (GameManager.boss._xPos == newX && GameManager.boss._yPos == newY)
+            if (EnemyManager.boss._xPos == newX && EnemyManager.boss._yPos == newY)
             {
 
-                GameManager.boss._health.TakeDamage(strength);
+                EnemyManager.boss._health.TakeDamage(strength);
                 didNotAct = false;
                 _lastEnemy = 0;
             }
             //sets enemy stats in hud
             if (_lastEnemy == 0)
             {
-                _lastEnemyHP = GameManager.boss._health._health;
-                _lastEnemyStrength = GameManager.boss.strength;
+                _lastEnemyHP = EnemyManager.boss._health._health;
+                _lastEnemyStrength = EnemyManager.boss.strength;
             }
             else
             {

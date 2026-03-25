@@ -27,7 +27,7 @@ namespace GP_TextGame_Kevin
             
             
         }
-        public static Enemy boss = new Boss(30,99,21);
+        
         public static int forestHeal = 3;
         public static int swampDamage = 3;
         public static int Score = 0;
