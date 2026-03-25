@@ -63,14 +63,14 @@ namespace FirstPlayable_GP2_Kevin
         {
             
             bool didNotAct = true;
-            if (GameManager.enemies.Any())
+            if (EnemyManager.enemies.Any())
             {
-                for (int i = 0; i < GameManager.enemies.Count; i++)
+                for (int i = 0; i < EnemyManager.enemies.Count; i++)
                 {
-                    if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
+                    if (EnemyManager.enemies[i]._xPos == newX && EnemyManager.enemies[i]._yPos == newY)
                     {
 
-                        GameManager.enemies[i]._health.TakeDamage(strength);
+                        EnemyManager.enemies[i]._health.TakeDamage(strength);
                         didNotAct = false;
                         _lastEnemy = i+1;
                     }
@@ -93,17 +93,17 @@ namespace FirstPlayable_GP2_Kevin
             }
             else
             {
-                _lastEnemyHP = GameManager.enemies[_lastEnemy-1]._health._health;
-                _lastEnemyStrength = GameManager.enemies[_lastEnemy-1].strength;
+                _lastEnemyHP = EnemyManager.enemies[_lastEnemy-1]._health._health;
+                _lastEnemyStrength = EnemyManager.enemies[_lastEnemy-1].strength;
             }
-            if (GameManager.items.Any())
+            if (Item_manager.items.Any())
             {
-                for (int i = 0; i < GameManager.items.Count; i++)
+                for (int i = 0; i < Item_manager.items.Count; i++)
                 {
-                    if (GameManager.items[i]._xPos == newX && GameManager.items[i]._yPos == newY)
+                    if (Item_manager.items[i]._xPos == newX && Item_manager.items[i]._yPos == newY)
                     {
 
-                        GameManager.items[i].use();
+                        Item_manager.items[i].use();
                         didNotAct = false;
 
                     }

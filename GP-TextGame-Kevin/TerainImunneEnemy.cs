@@ -23,9 +23,9 @@ namespace GP_TextGame_Kevin
                 //checks space enemy tries to move to
                 string spaceMovedTo = GameManager.map.CheckSpace(newX, newY, _xPos, _yPos);
                 //stops enemies stacking
-                for (int i = 0; i < GameManager.enemies.Count; i++)
+                for (int i = 0; i < EnemyManager.enemies.Count; i++)
                 {
-                    if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
+                    if (EnemyManager.enemies[i]._xPos == newX && EnemyManager.enemies[i]._yPos == newY)
                     {
 
                         return;

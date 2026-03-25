@@ -31,9 +31,9 @@ namespace GP_TextGame_Kevin
         public static int forestHeal = 3;
         public static int swampDamage = 3;
         public static int Score = 0;
-        public static List<Item> items = new List<Item>();
+        
         public static Map map = new Map();
-        public static List<Enemy> enemies = new List<Enemy>();
+        
         public static  Player player = new Player(100, 0, 0);
         
     }

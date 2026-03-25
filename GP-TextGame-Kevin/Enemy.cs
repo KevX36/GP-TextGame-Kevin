@@ -42,7 +42,7 @@ namespace FirstPlayable_GP2_Kevin
             }
         }
         //detemings how enemy will move
-        public virtual void MoveDirection(Player player, List<Enemy> enemies, Map map)
+        public virtual void MoveDirection()
         {
             bool XFirst;
             Random XOrY = new Random();
@@ -57,38 +57,38 @@ namespace FirstPlayable_GP2_Kevin
             }
             if (XFirst)
             {
-                if (_xPos < player._xPos && PlayerIsClose())
+                if (_xPos < GameManager.player._xPos && PlayerIsClose())
                 {
                     Move(_xPos + 1, _yPos );
                 }
-                else if (_xPos > player._xPos && PlayerIsClose())
+                else if (_xPos > GameManager.player._xPos && PlayerIsClose())
                 {
                     Move( _xPos - 1, _yPos);
                 }
-                else if (_yPos < player._yPos && PlayerIsClose())
+                else if (_yPos < GameManager.player._yPos && PlayerIsClose())
                 {
                     Move( _xPos, _yPos + 1);
                 }
-                else if (_yPos > player._yPos && PlayerIsClose())
+                else if (_yPos > GameManager.player._yPos && PlayerIsClose())
                 {
                     Move( _xPos, _yPos + -1);
                 }
             }
             else
             {
-                if (_yPos < player._yPos && PlayerIsClose())
+                if (_yPos < GameManager.player._yPos && PlayerIsClose())
                 {
                     Move(_xPos, _yPos + 1);
                 }
-                else if (_yPos > player._yPos && PlayerIsClose())
+                else if (_yPos > GameManager.player._yPos && PlayerIsClose())
                 {
                     Move( _xPos, _yPos - 1);
                 }
-                else if (_xPos < player._xPos && PlayerIsClose())
+                else if (_xPos < GameManager.player._xPos && PlayerIsClose())
                 {
                     Move( _xPos + 1, _yPos);
                 }
-                else if (_xPos > player._xPos && PlayerIsClose())
+                else if (_xPos > GameManager.player._xPos && PlayerIsClose())
                 {
                     Move( _xPos - 1, _yPos);
                 }
@@ -104,9 +104,9 @@ namespace FirstPlayable_GP2_Kevin
                 //checks space enemy tries to move to
                 string spaceMovedTo = GameManager.map.CheckSpace(newX, newY,_xPos,_yPos);
                 //stops enemies stacking
-                for (int i = 0; i < GameManager.enemies.Count; i++)
+                for (int i = 0; i < EnemyManager.enemies.Count; i++)
                 {
-                    if (GameManager.enemies[i]._xPos == newX && GameManager.enemies[i]._yPos == newY)
+                    if (EnemyManager.enemies[i]._xPos == newX && EnemyManager.enemies[i]._yPos == newY)
                     {
 
                         return;

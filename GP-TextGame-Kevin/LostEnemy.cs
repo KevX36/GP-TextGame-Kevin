@@ -15,7 +15,7 @@ namespace GP_TextGame_Kevin
             //changes how enemy is drawn
             _icon = '?';
         }
-        public override void MoveDirection(Player player, List<Enemy> enemies, Map map)
+        public override void MoveDirection()
         {
             
             
