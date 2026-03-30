@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FirstPlayable_GP2_Kevin
@@ -26,6 +27,8 @@ namespace FirstPlayable_GP2_Kevin
                 GameManager.map.DrawMap();
                 GameManager.Score = 0;
                 GameManager.player._health.FullHeal();
+                GameManager.player._xPos = 0;
+                GameManager.player._yPos = 0;
                 EnemyManager.BossSet();
                 Item_manager.spawnItems();
                 EnemyManager.SpwanEnemies();
@@ -43,7 +46,6 @@ namespace FirstPlayable_GP2_Kevin
 
 
                     GameManager.Move();
-
                 }
                 //end game
                 Console.Clear();
@@ -71,11 +73,11 @@ namespace FirstPlayable_GP2_Kevin
                 {
                     string con = Console.ReadLine();
                     con = con.ToLower();
-                    if (con == "y")
+                    if (con == "y" || con == "yes")
                     {
                         valadAwnser = true;
                     }
-                    else if (con == "n")
+                    else if (con == "n" || con == "no")
                     {
                         playing = false;
                         valadAwnser = true;

@@ -13,8 +13,8 @@ namespace FirstPlayable_GP2_Kevin
         public int _lastEnemyHP = 5;
         public int _lastEnemyStrength = 1;
         public int _lastEnemy = 0;
-        public int _xPos { get; private set; }
-        public int _yPos { get; private set; }
+        public int _xPos;
+        public int _yPos;
         public Health _health;
         public int moveStall = 0;
         public int strength { get; private set; }
