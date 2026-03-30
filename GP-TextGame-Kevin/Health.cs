@@ -23,8 +23,7 @@ namespace FirstPlayable_GP2_Kevin
             if(_revives > 0)
             {
                 _revives--;
-                _isAlive = true;
-                _health = _maxHealth;
+                FullHeal();
             }
         }
         public void TakeDamage(int DMG)
@@ -52,6 +51,7 @@ namespace FirstPlayable_GP2_Kevin
         public void FullHeal()
         {
             _health = _maxHealth;
+            _isAlive = true;
         }
     }
 }

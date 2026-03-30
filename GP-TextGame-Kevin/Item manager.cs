@@ -12,6 +12,7 @@ namespace GP_TextGame_Kevin
         public static List<Item> items = new List<Item>();
         public static void spawnItems()
         {
+            Item_manager.items.Clear();
             Item_manager.items.Add(new ExtraLife(18, 9, 1));
             Item_manager.items.Add(new ExtraLife(55, 21, 1));
             Item_manager.items.Add(new ScoreBoost(99, 17, 20));

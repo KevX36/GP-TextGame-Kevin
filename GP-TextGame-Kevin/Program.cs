@@ -22,10 +22,11 @@ namespace FirstPlayable_GP2_Kevin
             bool playing = true;
             while (playing)
             {
+                Console.Clear();
                 GameManager.map.DrawMap();
                 GameManager.Score = 0;
                 GameManager.player._health.FullHeal();
-
+                EnemyManager.BossSet();
                 Item_manager.spawnItems();
                 EnemyManager.SpwanEnemies();
 
@@ -37,7 +38,7 @@ namespace FirstPlayable_GP2_Kevin
 
 
 
-                    GameManager.draw();
+                    GameManager.Draw();
 
 
 
@@ -63,25 +64,27 @@ namespace FirstPlayable_GP2_Kevin
 
 
                 Console.ReadKey();
+
+                Console.WriteLine("would you like to play again, y or n, hit enter to conferm");
+                bool valadAwnser = false;
+                while (!valadAwnser)
+                {
+                    string con = Console.ReadLine();
+                    con = con.ToLower();
+                    if (con == "y")
+                    {
+                        valadAwnser = true;
+                    }
+                    else if (con == "n")
+                    {
+                        playing = false;
+                        valadAwnser = true;
+                    }
+                    else Console.WriteLine("that is not a valad awnser");
+                }
             }
 
-            Console.WriteLine("would you like to play again, y or n");
-            bool valadAwnser = false;
-            while (!valadAwnser)
-            {
-                string con = Console.ReadKey().ToString();
-                con = con.ToLower();
-                if (con == "y")
-                {
-                    valadAwnser = true;
-                }
-                else if (con == "n")
-                {
-                    playing = false;
-                    valadAwnser = true;
-                }
-                else Console.WriteLine("that is not a valad awnser");
-            }
+            
 
         }
         

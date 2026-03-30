@@ -11,8 +11,15 @@ namespace GP_TextGame_Kevin
     {
         public static Enemy boss = new Boss(30, 99, 21);
         public static List<Enemy> enemies = new List<Enemy>();
+        public static void BossSet()
+        {
+            EnemyManager.boss._health.FullHeal();
+            EnemyManager.boss._xPos = 99;
+            EnemyManager.boss._yPos = 21;
+        }
         public static void SpwanEnemies()
         {
+            EnemyManager.enemies.Clear();
             EnemyManager.enemies.Add(new Enemy(3, 4, 4));
             EnemyManager.enemies.Add(new LostEnemy(3, 2, 14));
             EnemyManager.enemies.Add(new Enemy(3, 21, 0));

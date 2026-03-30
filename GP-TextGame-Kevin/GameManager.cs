@@ -81,7 +81,7 @@ namespace GP_TextGame_Kevin
                 }
             }
         }
-        public static void draw()
+        public static void Draw()
         {
             GameManager.player.DrawPlayer();
             EnemyManager.boss.DrawEnemy();
