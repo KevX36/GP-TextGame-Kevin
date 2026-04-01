@@ -87,8 +87,15 @@ namespace GP_TextGame_Kevin
         {
             if (Console.WindowWidth < 120 || Console. WindowHeight < 30)
             {
-                Console.WindowWidth = 120;
-                Console.WindowHeight = 30;
+                if(Console.WindowWidth < 120)
+                {
+                    Console.WindowWidth = 120;
+                }
+                if(Console.WindowHeight < 30)
+                {
+                    Console.WindowHeight = 30;
+                }
+                
                 Console.Clear();
                 GameManager.map.DrawMap();
                 Draw();
