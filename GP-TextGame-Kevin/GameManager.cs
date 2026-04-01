@@ -9,6 +9,8 @@ namespace GP_TextGame_Kevin
 {
     internal class GameManager
     {
+        
+        
         private GameManager()
         {
 
@@ -81,9 +83,22 @@ namespace GP_TextGame_Kevin
                 }
             }
         }
+        public static void CheckWindow()
+        {
+            if (Console.WindowWidth < 120 || Console. WindowHeight < 30)
+            {
+                Console.WindowWidth = 120;
+                Console.WindowHeight = 30;
+                Console.Clear();
+                GameManager.map.DrawMap();
+                Draw();
+            }
+        }
         public static void Draw()
         {
+            GameManager.CheckWindow();
             GameManager.player.DrawPlayer();
+            GameManager.CheckWindow();
             EnemyManager.boss.DrawEnemy();
             if (Item_manager.items.Any())
             {
@@ -106,6 +121,7 @@ namespace GP_TextGame_Kevin
         }
         public static void Move()
         {
+            Console.SetCursorPosition(0, 1);
             GameManager.player.MoveInput();
             if (EnemyManager.enemies.Any())
             {

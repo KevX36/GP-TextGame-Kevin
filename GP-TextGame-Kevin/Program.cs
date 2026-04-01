@@ -23,6 +23,7 @@ namespace FirstPlayable_GP2_Kevin
             bool playing = true;
             while (playing)
             {
+                GameManager.CheckWindow();
                 Console.Clear();
                 GameManager.map.DrawMap();
                 GameManager.Score = 0;
@@ -32,20 +33,21 @@ namespace FirstPlayable_GP2_Kevin
                 EnemyManager.BossSet();
                 Item_manager.spawnItems();
                 EnemyManager.SpwanEnemies();
-
+                GameManager.Draw();
                 while (GameManager.player._health.CheakIfAlive() && EnemyManager.boss._health.CheakIfAlive())
                 {
+                    GameManager.CheckWindow();
                     Console.SetCursorPosition(0, 0);
                     Console.WriteLine($"Health: {GameManager.player._health._health}    strength:{GameManager.player.strength}     Score: {GameManager.Score}       ExtraLives: {GameManager.player._health._revives}      Enemy Health: {GameManager.player._lastEnemyHP}      Enemy Strength: {GameManager.player._lastEnemyStrength}                 ");
                     GameManager.RemoveUsedOrDead();
-
-
-
+                    
+                    GameManager.Move();
+                    
                     GameManager.Draw();
 
 
 
-                    GameManager.Move();
+                    
                 }
                 //end game
                 Console.Clear();
