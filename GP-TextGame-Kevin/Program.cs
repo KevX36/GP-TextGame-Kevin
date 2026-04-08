@@ -14,15 +14,25 @@ namespace FirstPlayable_GP2_Kevin
     internal class Program
     {
         
+        
+
+
+
         static List<int> enemiesToRemove = new List<int>();
         static List<int> itemsToRemove = new List<int>();
         static Random random = new Random();
         
         static void Main(string[] args)
         {
+            
+
+
             bool playing = true;
             while (playing)
             {
+                Console.WriteLine("ITEMS:\n\nS: score boost\n+: healing\nL: extra life\n\nENEMIES:\n\nX: basic enemy moves to attack you\n?: lost enemies moves random\n%: not effected by train\n!: stong but slow\nB: the boss, kill him to win, his power and speed change after every attack\n\nTERRAIN:\n\n`: grass\n~: water slows you down\nH: heals all that step on it\n@: damages heals all that step on it\n^: impassable mountain\n\n\npress anything to start");
+                Console.ReadKey(true);
+                Console.Clear();
                 GameManager.CheckWindow();
                 Console.Clear();
                 GameManager.map.DrawMap();

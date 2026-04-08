@@ -33,7 +33,7 @@ namespace FirstPlayable_GP2_Kevin
             
             if (moveStall <= 0)
             {
-                ConsoleKeyInfo moveInput = Console.ReadKey();
+                ConsoleKeyInfo moveInput = Console.ReadKey(true);
 
                 if (moveInput.Key == ConsoleKey.W)
                 {
