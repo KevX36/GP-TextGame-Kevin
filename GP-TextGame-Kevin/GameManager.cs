@@ -85,21 +85,21 @@ namespace GP_TextGame_Kevin
         }
         public static void CheckWindow()
         {
-            if (Console.WindowWidth < 120 || Console. WindowHeight < 30)
+            if (Console.WindowWidth < 130)
             {
-                if(Console.WindowWidth < 120)
-                {
-                    Console.WindowWidth = 120;
-                }
-                if(Console.WindowHeight < 30)
-                {
-                    Console.WindowHeight = 30;
-                }
-                
+                Console.WindowWidth = 130;
                 Console.Clear();
                 GameManager.map.DrawMap();
                 Draw();
             }
+            if (Console.WindowHeight < 30)
+            {
+                Console.WindowHeight = 30;
+                Console.Clear();
+                GameManager.map.DrawMap();
+                Draw();
+            }
+            
         }
         public static void Draw()
         {

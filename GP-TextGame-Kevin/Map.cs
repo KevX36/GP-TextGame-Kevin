@@ -7,6 +7,7 @@ using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Diagnostics.Eventing.Reader;
 using System.Runtime.InteropServices;
+using GP_TextGame_Kevin;
 
 namespace FirstPlayable_GP2_Kevin
 {
@@ -25,7 +26,7 @@ namespace FirstPlayable_GP2_Kevin
 
         public void DrawMap()
         {
-
+            GameManager.CheckWindow();
             for (int i = 0; i < _map.Length; i++)
             {
 
@@ -86,6 +87,7 @@ namespace FirstPlayable_GP2_Kevin
 
             if(spaceResult != "fail")
             {
+                GameManager.CheckWindow();
                 Console.SetCursorPosition(oldX+5, oldY+5);
                 Console.BackgroundColor = backgroundColors[_map[oldY][oldX]];
                 Console.Write(_map[oldY][oldX]);
