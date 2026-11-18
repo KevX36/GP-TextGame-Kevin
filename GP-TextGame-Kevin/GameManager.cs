@@ -1,8 +1,11 @@
 ﻿using FirstPlayable_GP2_Kevin;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace GP_TextGame_Kevin
@@ -144,6 +147,17 @@ namespace GP_TextGame_Kevin
 
             EnemyManager.boss.MoveDirection();
         }
+
+        public static void SetTileData()
+        {
+            
+            string jsonRead = File.ReadAllText("tiledata.json");
+            
+            TileData tiledata = JsonSerializer.Deserialize<TileData>(jsonRead);
+
+            forestHeal=tiledata.forestHeal;
+            swampDamage = tiledata.poisonDamage;
+        }
         public static int forestHeal = 3;
         public static int swampDamage = 3;
         public static int Score = 0;
@@ -152,5 +166,15 @@ namespace GP_TextGame_Kevin
         
         public static  Player player = new Player(100, 0, 0);
         
+    }
+    public class TileData
+    {
+        public TileData(int poisonDamage, int forestHeal)
+        {
+            this.poisonDamage = poisonDamage;
+            this.forestHeal = forestHeal;
+        }
+        public int poisonDamage { get; set; }
+        public int forestHeal { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace FirstPlayable_GP2_Kevin
 {
     internal class Program
     {
-        //I'm sorry
+        
         
 
 
@@ -25,7 +25,7 @@ namespace FirstPlayable_GP2_Kevin
         static void Main(string[] args)
         {
             
-
+            GameManager.SetTileData();
 
             bool playing = true;
             while (playing)

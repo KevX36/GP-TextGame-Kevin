@@ -16,3 +16,31 @@ C:\nscc_work\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\MapText.txt
 C:\nscc_work\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\GP-TextGame-Kevin.exe.config
 C:\nscc_work\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\GP-TextGame-Kevin.exe
 C:\nscc_work\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\GP-TextGame-Kevin.pdb
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\MapText.txt
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\GP-TextGame-Kevin.exe.config
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\GP-TextGame-Kevin.exe
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\GP-TextGame-Kevin.pdb
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Buffers.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.IO.Pipelines.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Memory.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Text.Json.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Buffers.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.IO.Pipelines.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Memory.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Text.Json.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextGame-Kevin.csproj.AssemblyReference.cache
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextGame-Kevin.csproj.CoreCompileInputs.cache
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextG.BFF8512E.Up2Date
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextGame-Kevin.exe
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\obj\Debug\GP-TextGame-Kevin.pdb
+C:\Users\w0525353\Kevin's Porjects\GP-TextGame-Kevin\GP-TextGame-Kevin\bin\Debug\tiledata.json
